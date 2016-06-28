@@ -1,0 +1,8 @@
+.classpath
+.mvn
+target/
+build/
+# IDEs
+.settings/
+.project
+.idea
