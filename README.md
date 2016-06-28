@@ -10,3 +10,7 @@ Organize successful meetings.
 	java -jar target/spotko-0.0.1-SNAPSHOT.jar
 	
 Application is available at [localhost:8080](http://localhost:8080)
+
+## Deploy
+
+	heroku ps:scale web=1 --app spotko
