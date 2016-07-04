@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html layout:decorator="fragments/base">
+<body>
+	<div layout:fragment="content" class="container">
+		<div class="starter-template">
+			<h1 th:text="${meeting.name}">Cool meeting</h1>
+			<span th:text="${#temporals.format(meeting.startAt, 'yyyy-MM-dd HH:mm')}">2016-06-10 20:00</span>
+			<div th:text="${meeting.description}"></div>
+		</div>
+	</div>
+</body>
+</html>
