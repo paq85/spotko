@@ -40,7 +40,7 @@ public class WelcomeControllerTest {
 	public void getHello() throws Exception {
 		ResultActions actions = mvc.perform(MockMvcRequestBuilders.get("/"));
 		actions.andExpect(status().isOk())
-				.andExpect(content().string(containsString("<h1>Zaplanuj udane spotkanie!</h1>")));
+				.andExpect(content().string(containsString("<h1>Plan a Great Meeting!</h1>")));
 		
 	}
 
