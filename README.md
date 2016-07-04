@@ -2,9 +2,20 @@
 
 Organize successful meetings.
 
-## Setup & Run
+## Setup
 
 [![Build Status](https://travis-ci.org/paq85/spotko.svg?branch=master)](https://travis-ci.org/paq85/spotko)
+
+### Facebook authentication
+Please adjust application.properties or inject proper values using one of supported methods http://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html#boot-features-external-config-profile-specific-properties
+
+Properties that need to be set up: `security.oauth2.client.client-id` and `security.oauth2.client.client-secret`
+
+Eg. you can use this trick
+
+	java -Dspring.application.json='{"security.oauth2.client.client-id":"123", "security.oauth2.client.client-secret": "123"}' -jar myapp.jar
+	
+## Run
 
 	./mvnw clean package
 	java -jar target/spotko-0.0.1-SNAPSHOT.jar
