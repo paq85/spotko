@@ -1,8 +1,10 @@
 .classpath
 .mvn
+.factorypath
 target/
 build/
 # IDEs
 .settings/
 .project
 .idea
+/.apt_generated/
