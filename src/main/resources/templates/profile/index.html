@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html layout:decorator="fragments/base">
+<body>
+	<div layout:fragment="content" class="container">
+		<h1 th:inline="text">Hello [[${principal.name}]]!</h1>
+	</div>
+</body>
+</html>

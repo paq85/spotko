@@ -15,4 +15,9 @@ public class WelcomeController {
     String index(Model model) {
         return "index";
     }
+	
+	@RequestMapping("/login")
+	String logIn() {
+		return "profile/login";
+	}
 }

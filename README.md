@@ -9,11 +9,11 @@ Organize successful meetings.
 ### Facebook authentication
 Please adjust application.properties or inject proper values using one of supported methods http://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html#boot-features-external-config-profile-specific-properties
 
-Properties that need to be set up: `security.oauth2.client.client-id` and `security.oauth2.client.client-secret`
+Properties that need to be set up: `facebook.client.client-id` and `facebook.client.client-secret`
 
 Eg. you can use this trick
 
-	java -Dspring.application.json='{"security.oauth2.client.client-id":"123", "security.oauth2.client.client-secret": "123"}' -jar myapp.jar
+	java -Dspring.application.json='{"facebook.client.client-id":"123", "facebook.client.client-secret": "123"}' -jar myapp.jar
 	
 ## Run
 
