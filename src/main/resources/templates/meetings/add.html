@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html layout:decorator="fragments/base">
+<body>
+	<div layout:fragment="content" class="container">
+		<div class="starter-template">
+			<h1>Add a meeting</h1>
+			<form action="#" th:action="@{/meetings/add}" th:object="${meeting}" method="post">
+		    	<p>Id: <input type="text" th:field="*{id}" readonly="true" /></p>
+		        <p>Name: <input type="text" th:field="*{name}" /></p>
+		        <p>Start at: <input type="text" th:field="*{startAt}" /></p>
+		        <p>Description: <textarea rows="4" cols="50" th:field="*{description}"></textarea></p>
+		        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+		    </form>
+		</div>
+	</div>
+</body>
+</html>

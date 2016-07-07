@@ -12,10 +12,11 @@
 				</tr>
 				<tr th:each="meeting : ${meetings}">
 					<!-- <td th:text="${meeting.id}">123</td> -->
-					<td><a href="/meetings/123" th:href="@{'/meetings/'+${meeting.id}}" th:text="${meeting.name}">Meeting name</a></td>
+					<td><a href="/meetings/show/123" th:href="@{'/meetings/show/'+${meeting.id}}" th:text="${meeting.name}">Meeting name</a></td>
 					<td th:text="${#temporals.format(meeting.startAt, 'yyyy-MM-dd HH:mm')}">2016-06-10 20:00</td>
 				</tr>
 			</table>
+			<a href="/meetings/add">Add Meeting</a>
 		</div>
 	</div>
 </body>
