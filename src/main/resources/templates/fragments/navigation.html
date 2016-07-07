@@ -10,7 +10,7 @@
 						class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="/">Spotko</a>
-				<a class="navbar-brand" th:href="@{/meetings/}" href="/meetings/">Meetings</a>
+				<a class="navbar-brand" th:href="@{/meetings/list}" href="/meetings/">Meetings</a>
 				<a class="navbar-brand" sec:authorize="isAuthenticated()" href="/profile/" th:href="@{/profile/}">Profile</a>
 				<form class="navbar-brand" sec:authorize="isAuthenticated()" th:action="@{/logout}" method="post">
 		            <input type="submit" value="Sign Out"/>
